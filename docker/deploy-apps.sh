@@ -1,6 +1,9 @@
 docker-compose stop
 
-docker rmi thtsbe/cityguessr-app
-docker rmi thtsbe/cityguessr-service
+docker rm cityguessr_app
+docker rm cityguessr_service
 
-docker-compose up --build -d
+docker rmi -f thtsbe/cityguessr-app
+docker rmi -f thtsbe/cityguessr-service
+
+docker-compose up -d
