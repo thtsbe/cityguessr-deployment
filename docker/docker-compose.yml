@@ -17,6 +17,10 @@ services:
     restart: always
     environment:
       MONGODB_PASSWORD: ${MONGODB_PASSWORD}
+  cityguessr-app:
+    image: thtsbe/cityguessr-app:latest
+    container_name: cityguessr_app
+    restart: always
   mongodb:
     image: mongo
     container_name: mongo_db

@@ -2,6 +2,10 @@ cityguessr.saturncloud.club {
   respond "Welcome"
 }
 
+app.cityguessr.saturncloud.club {
+  reverse_proxy cityguessr_app:8080
+}
+
 service.cityguessr.saturncloud.club {
   reverse_proxy cityguessr_service:8080
 }
