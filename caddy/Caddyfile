@@ -13,3 +13,7 @@ service.cityguessr.saturncloud.club {
 data.cityguessr.saturncloud.club {
   reverse_proxy mongo_express:8081
 }
+
+testdata.cityguessr.saturncloud.club {
+  reverse_proxy mongo_express_test:8081
+}
