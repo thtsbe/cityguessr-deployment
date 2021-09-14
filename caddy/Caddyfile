@@ -1,0 +1,7 @@
+cityguessr.saturncloud.club {
+  respond "Welcome"
+}
+
+data.cityguessr.saturncloud.club {
+  reverse_proxy mongo_express:8081
+}
